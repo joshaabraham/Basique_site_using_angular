@@ -1,0 +1,14 @@
+<div ng-controller="ninjaController">
+<h3>Comentaires</h3>
+<ul>
+  <li ng-repeat="commentaire in messages ">
+        <div>{{commentaire._id }} | {{commentaire.index}} | {{commentaire.guid}} </div>
+        <div>{{commentaire.about }} </div>
+        <div>{{commentaire.registered }} </div>
+
+
+  </li>
+</ul>
+
+
+</div>

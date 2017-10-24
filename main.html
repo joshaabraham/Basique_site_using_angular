@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="ninjasModule">
+
+<head>
+
+    <title>Test angular</title>
+
+    <link type="text/css" href="Styles/styles.css" rel="stylesheet" />
+    <link type="text/css" href="Styles/RegisterFormStyles.css" rel="stylesheet" />
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script type="text/javascript" src="libs\angular-1.6.4\angular.js"></script>
+    <script type="text/javascript" src="libs\angular-1.6.4\angular-route.min.js"></script>
+    <script type="text/javascript" src="libs\Modules\ninjasModule.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="View\Content\Footers\css\footer-distributed-with-search.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <header ng-include="'View/Content/Headers/header.html'"></header>
+
+    <!-- INTRO MODEL -->
+    <div>
+        <h1>Salut le monde</h1>
+        <input type="text" ng-model="text1">
+        <ul>
+            <li>{{text1}}</li>
+        </ul>
+    </div>
+
+
+    <main ng-view></main>
+
+
+
+    <!-- LIST Commentaires-->
+    <!--    <div ng-controller="ninjaController">
+    <h3>Comentaires</h3>
+    <ul>
+      <li ng-repeat="commentaire in messages">
+            <div>{{commentaire._id }} | {{commentaire.index}} | {{commentaire.guid}} </div>
+            <div>{{commentaire.about }} </div>
+            <div>{{commentaire.registered }} </div>
+      </li>
+    </ul>
+    </div>
+
+-->
+    <!-- TABLE Commentaires -->
+    <!--    <div ng-controller="ninjaController">
+
+        <table>
+        <th> ID </th><th> Index </th><th> Guid </th><th> Registered </th>
+        <tr ng-repeat="commentaire in messages"><td> {{commentaire._id }} </td><td> {{commentaire.index}} </td><td> {{commentaire.guid}} </td><td> {{commentaire.registered }} </td>
+        </tr>
+        </table>
+    </div>
+
+  -->
+    <footer ng-include="'View/Content/Footers/footer-distributed-with-search.html'"></footer>
+</body>
+
+</html>

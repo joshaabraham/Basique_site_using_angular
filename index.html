@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="carnet">
+
+<head>
+
+    <title>LoginForm</title>
+
+    <link type="text/css" href="Styles/styles.css" rel="stylesheet" />
+    <link type="text/css" href="Styles/RegisterFormStyles.css" rel="stylesheet" />
+    <link type="text/css" href="Styles/topNavLogin.css" rel="stylesheet" />
+
+
+<!-- -->
+
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script> 
+
+
+    <script type="text/javascript" src="libs/Modules/ninjasModule.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="View\Content\Footers\css\footer-distributed-with-search.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container" ng-controller="productCtrl as produit">
+      <div class="row">
+      	<div class="col-md-12">
+  			<div class="col-sm-6 col-md-4">
+  				<div class="thumbnail" >
+  					<h4 class="text-center"><span class="label label-info">{{produit.individu.name}}</span></h4>
+  					<img src="http://placehold.it/650x450&text=Galaxy S5" class="img-responsive">
+  					<div class="caption">
+  						<div class="row">
+  							<div class="col-md-6 col-xs-6">
+  								<h3>{{produit.individu.email}}</h3>
+  							</div>
+  							<div class="col-md-6 col-xs-6 price">
+  								<h3>
+  								<label>{{produit.individu.age}}</label></h3>
+  							</div>
+  						</div>
+  						<p>{{produit.individu.address}}</p>
+  						<div class="row">
+  							<div class="col-md-6">
+  								<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a>
+  							</div>
+  							<div class="col-md-6">
+  								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</a></div>
+  						</div>
+
+  						<p> </p>
+  					</div>
+  				</div>
+  			</div>
+          </div>
+  	</div>
+  </div>
+
+<script type="text/javascript" src="connectModule.js"></script>
+
+</body>
+
+</html>
